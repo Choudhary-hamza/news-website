@@ -1,0 +1,112 @@
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(72, 72, 72);
+    padding: 0;
+    margin: 0;
+}
+.list li{
+    list-style: none;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(203, 203, 203);
+
+}
+.list li a{
+    text-decoration: none;
+    color: rgb(215, 215, 215);
+}
+.icon1{
+    padding: 0 10px;
+}
+.list li:hover ,.list li a:hover{
+    background-color: #cccccc;
+    color: black;
+    cursor: pointer;
+}
+.hotList{
+    width: 100%;
+    height: auto;
+    min-height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 10px;
+    border: 2px solid black;
+}
+.hotListImage{
+    width :100%;
+    height: auto;
+    max-height: 450px;
+    max-width: 750px;
+    border: 2px solid black;
+    position: relative;  
+    font-weight: bolder;
+    font-family: "Playfair Display", serif;
+    color: white;  
+    border-radius: 20px;
+}
+.title{
+    position: absolute;
+    left: 20px;
+    font-size: 32px;
+    width: 300px;
+    bottom: 50px;
+}
+.newsTime{
+    position: absolute;
+    left: 20px;
+    font-size: 16px;
+    bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+.newsTime :first-child{
+    margin-right: 10px;
+}
+.description{
+    font-size: 18px;
+    font-family:"Playfair Display", serif;
+    padding-top: 10px;
+    white-space: nowrap;         /* Prevent line breaks */
+  overflow: hidden;            /* Hide overflow */
+  text-overflow: ellipsis;
+}
+@media  screen and (max-width:700px){
+    .hotListImage{
+        width :100%;
+        height: 290px;
+    }
+    .title{
+        font-size: 24px;
+        font-weight: bold;
+        width: 90%;
+    }
+    .newsTime{
+        font-size: 12px ;
+    }
+    .description{
+        visibility: hidden;
+    }
+}
+@media  screen and (max-width:330px){
+    .hotListImage{
+        width :100%;
+        height: 200px;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .newsTime{
+        font-size: 8px ;
+    }
+}

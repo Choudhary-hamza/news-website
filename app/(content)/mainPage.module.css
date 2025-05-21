@@ -1,0 +1,25 @@
+.menu{
+    width: 95%;
+    max-width: 1000px;
+    height: 60px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    position: relative;
+}
+.search{
+    width:200px !important
+}
+.main{
+    width: 95%;
+    max-width: 1000px;
+    min-height: 20vw;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    border: 2px solid black;
+}

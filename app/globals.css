@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.header-container{
+  width: 95vw;
+  max-width: 1000px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 1px 1px;
+}
+.logo{
+  width: 50px !important;
+  height: 50px !important;
+  position: relative;
+}
+.image{
+  position: absolute;
+  border: 0px solid black;
+  border-radius: 30px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.link_first{
+  text-decoration: none !important;
+  color: blue ;
+}
+.link_first:hover{
+  color: white;
+}
+.link_second{
+  text-decoration: none !important;
+  color: white ;
+}

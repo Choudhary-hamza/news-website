@@ -1,0 +1,123 @@
+.otp_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .otp_card {
+    background-color: #cddfef;
+    border-radius: 12px;
+    box-shadow: 10px 9px 20px 0px #919191;
+    padding: 40px;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+  }
+  
+  .otp_header h1 {
+    margin: 0 0 12px;
+    color: #1a1a1a;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .email_info {
+    color: #6b7280;
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+  
+  .email_info span {
+    color: #000;
+    font-weight: 500;
+  }
+  
+  .timer_container {
+    margin-bottom: 24px;
+    font-size: 15px;
+    color: #4b5563;
+  }
+  
+  .timer {
+    font-weight: 600;
+    color: #3b82f6;
+  }
+  
+  .expired_message {
+    color: #ef4444;
+    font-weight: 500;
+  }
+  
+  .otp_inputs {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+  
+  .otp_inputs input {
+    width: 50px;
+    height: 60px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: all 0.2s ease;
+  }
+  
+  .otp_inputs input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    outline: none;
+  }
+  
+  .otp_inputs input.disabled {
+    background-color: #f3f4f6;
+    border-color: #e5e7eb;
+    color: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  .actions {
+    margin-top: 20px;
+  }
+  
+  .verify_button,
+  .resend_button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .verify_button {
+    background-color: white;
+    color: black;
+  }
+  
+  .verify_button:hover {
+    background-color: white;
+  }
+  
+  .resend_button {
+    background-color: #f3f4f6;
+    color: #4b5563;
+  }
+  
+  .resend_button:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .resend_button:disabled {
+    background-color: #f3f4f6;
+    color: #9ca3af;
+    cursor: not-allowed;
+  }
